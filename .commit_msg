@@ -1,0 +1,15 @@
+feat: initial release of BigQuery Release Notes Explorer
+
+This commit introduces the BigQuery Release Notes Explorer, a lightweight SaaS-like
+dashboard that fetches, normalizes, and showcases Google BigQuery product updates.
+
+Key Features:
+- Grouped RSS Updates Parsing: Splits date-grouped XML feed items into individual updates using BeautifulSoup.
+- Light & Dark Theme Support: Polished dynamic color swaps utilizing CSS variables, localStorage, and header theme toggle controls.
+- SaaS Dashboard Stats: Dynamic counters for total updates, features, announcements, and known issues.
+- Export & Clipboard Utilities: "Copy to Clipboard" for fast sharing and "Export CSV" to download currently filtered items.
+- Twitter/X Share Integration: Pre-populated tweet composer with automated character constraint truncator and circular progress countdown.
+
+Tech Stack:
+- Backend: Python Flask, Feedparser, Requests, BeautifulSoup4.
+- Frontend: Vanilla HTML5, CSS3, ES6 JavaScript.
