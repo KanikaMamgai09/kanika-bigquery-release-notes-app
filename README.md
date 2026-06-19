@@ -38,18 +38,17 @@ During the design, development, and deployment of this application, the followin
 
 ## Key Features
 
-- **Professional Light UI**: A clean, distraction-free interface matching premium Google Cloud documentation styling.
-- **Vibrant Stats Dashboard**: A statistics card panel indicating active metrics (Total Updates, Features, Announcements, and Issues) computed dynamically as data updates.
-- **Smart HTML Update Splitting**: BigQuery publishes all daily updates grouped in a single XML feed item. The backend parses this HTML and splits it by `<h3>` category headings to present distinct, selectable updates.
-- **Color-Coded Pastel Badges**: Updates are color-coded by type (Blue for Features, Yellow for Announcements, Red for Issues, Green for Changes).
-- **Interactive Search & Category Filters**: Live-filter updates using the search bar or category navigation pills. Order results dynamically by newest or oldest first.
-- **Mock X (Twitter) Draft Composer**:
-  - Automatically generates engaging tweets: `Google #BigQuery [Type] ([Date]): "[Content]" [Link]`
-  - Smart word-boundary truncation keeping draft elements within X's 280-character limit.
-  - Features an interactive character counter and a radial SVG progress circle indicating remaining length.
-  - Confirms and redirects to the official `x.com` sharing intent interface.
-- **Direct Anchor Links**: Link icons point directly to the date's specific anchor location on the Google Cloud release page (e.g. `#June_17_2026`).
-- **Resilient Fallback Parsing**: Bypasses macOS certificate verification restrictions dynamically and implements an in-memory cache to maintain server performance.
+Live Metrics Dashboard: Real-time tracking of total updates, new features, announcements, and known issues.
+
+Smart HTML Parsing: Automatically segments aggregated BigQuery XML feeds into individual, actionable updates.
+
+Interactive Search & Filtering: Offers live text search, color-coded category tags, and dynamic chronological sorting.
+
+Automated X (Twitter) Composer: Auto-generates platform-ready drafts with smart word-boundary truncation and a live visual character counter.
+
+Precision Deep-Linking: Routes users directly to exact date anchors within Google Cloud's official release notes.
+
+Resilient Backend Architecture: Ensures high performance and stability using in-memory caching and fault-tolerant parsing to bypass local certificate barriers.
 
 ---
 
@@ -110,7 +109,7 @@ Start the Flask application:
 python app.py
 ```
 
-The application will launch on port `8080`. Open your browser and navigate to:
+Local Access: Upon startup, the application runs on port `8080`. Open your browser and navigate to:
 👉 **[http://localhost:8080/](http://localhost:8080/)**
 
 ---
