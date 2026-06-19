@@ -6,6 +6,12 @@ The app automatically fetches the official Google BigQuery Release Notes RSS/Ato
 
 ---
 
+## Preview
+
+![BigQuery Release Notes Explorer Dashboard](docs/screenshot.png)
+
+---
+
 ## Key Features
 
 - **Professional Light UI**: A clean, distraction-free interface matching premium Google Cloud documentation styling.
