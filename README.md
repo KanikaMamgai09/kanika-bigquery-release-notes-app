@@ -8,23 +8,25 @@ The app automatically fetches the official Google BigQuery Release Notes RSS/Ato
 
 ## Developed via Google's Antigravity CLI 🚀
 
-This application was built entirely using agentic "vibe coding" workflows via **Google's Antigravity CLI (`agy`)** as part of the **Kaggle x Google Day-2 workshop on Agents & Vibe Coding**. 
+> [!IMPORTANT]
+> This entire project was built using **Google's Antigravity CLI (`agy`)** as part of the **Kaggle x Google Day-2 workshop on Agents & Vibe Coding**.
 
 ### What is Antigravity CLI?
-**Antigravity CLI (`agy`)** is Google's advanced AI companion for autonomous software engineering. By exposing filesystem operations, terminal execution, and web browser controls directly to a Gemini reasoning model, `agy` acts as a pair programmer that can autonomously set up environments, compile code, resolve exceptions, structure styles, and manage remote integrations on behalf of the developer.
+**Antigravity CLI (`agy`)** is Google's advanced, autonomous AI developer agent companion designed for software engineering. Running directly on the local terminal, `agy` integrates a powerful Gemini reasoning model with deep filesystem, shell command, browser automation, and subagent orchestration tools. This allows the developer to collaborate on codebase creation, modification, debugging, and testing entirely via natural language prompts, while the CLI autonomously compiles code, resolves errors, and stages commits.
 
-### CLI Workflow Used in Development
-Throughout the workshop session, the following `agy` commands and concepts were utilized:
-- **`agy` Initialization**: Starting the AI companion session in the workspace directory.
-- **Collaborative Prompts**: Describing desired features (e.g. "redesign to light theme", "add CSV exports") and letting the agent write code, build structures, and verify outputs.
-- **Autonomous Terminal Execution**: The agent initialized the Python virtual environment (`.venv`), installed libraries (`beautifulsoup4`, `feedparser`), and launched/managed the background Flask server.
-- **Git & GitHub Integration**: Staged files, compiled conventional commits, and created/pushed the repository using the GitHub CLI interface.
+### `agy` Commands Used During Development
+During the design, development, and deployment of this application, the following `agy` commands were utilized:
+
+*   **`agy`** (or **`agy -i` / `agy --prompt-interactive`**): Used to initiate the interactive developer agent session inside the repository workspace, launching the pair-programming loop.
+*   **`agy --continue`** (or **`agy -c`**): Used to resume and continue the most recent coding conversation session, allowing the agent to persist context across terminals and system restarts.
+*   **`agy models`**: Used to query and list the available Google Gemini models that can power the developer agent.
+*   **`agy plugin`** (or **`agy plugins`**): Used to view, enable, and manage developer agent extensions (such as `chrome-devtools-plugin` for accessibility/LCP auditing and `modern-web-guidance-plugin` for CSS/JS guidelines).
 
 ### Built With
-- **Orchestration**: Google Antigravity CLI (`agy`)
-- **AI Model**: Gemini 3.5 Flash (Medium)
-- **Backend**: Python Flask, Feedparser, Requests, BeautifulSoup4
-- **Frontend**: Vanilla HTML5, CSS3, ES6 JavaScript (zero external UI libraries)
+*   **Agentic Orchestrator**: Google's Antigravity CLI (`agy`)
+*   **AI Foundation Model**: Gemini 3.5 Flash
+*   **Backend Framework**: Python Flask (with `feedparser` and `BeautifulSoup4`)
+*   **Frontend Stack**: Vanilla HTML5, Vanilla CSS3, and Vanilla ES6 JavaScript (built completely from scratch without external frameworks or UI libraries)
 
 ---
 
