@@ -38,17 +38,17 @@ During the design, development, and deployment of this application, the followin
 
 ## Key Features
 
-Live Metrics Dashboard: Real-time tracking of total updates, new features, announcements, and known issues.
+- **Live Metrics Dashboard:** Real-time tracking of total updates, new features, announcements, and known issues.
 
-Smart HTML Parsing: Automatically segments aggregated BigQuery XML feeds into individual, actionable updates.
+- **Smart HTML Parsing:** Automatically segments aggregated BigQuery XML feeds into individual, actionable updates.
 
-Interactive Search & Filtering: Offers live text search, color-coded category tags, and dynamic chronological sorting.
+- **Interactive Search & Filtering:** Offers live text search, color-coded category tags, and dynamic chronological sorting.
 
-Automated X (Twitter) Composer: Auto-generates platform-ready drafts with smart word-boundary truncation and a live visual character counter.
+- **Automated X (Twitter) Composer:** Auto-generates platform-ready drafts with smart word-boundary truncation and a live visual character counter.
 
-Precision Deep-Linking: Routes users directly to exact date anchors within Google Cloud's official release notes.
+- **Precision Deep-Linking:** Routes users directly to exact date anchors within Google Cloud's official release notes.
 
-Resilient Backend Architecture: Ensures high performance and stability using in-memory caching and fault-tolerant parsing to bypass local certificate barriers.
+- **Resilient Backend Architecture:** Ensures high performance and stability using in-memory caching and fault-tolerant parsing to bypass local certificate barriers.
 
 ---
 
