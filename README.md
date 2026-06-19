@@ -1,6 +1,6 @@
 # BigQuery Release Notes Explorer
 
-A premium, professional light-themed SaaS dashboard application built with **Python Flask** and **Vanilla HTML, CSS, and JavaScript**. 
+A SaaS dashboard application built with **Python Flask** and **Vanilla HTML, CSS, and JavaScript**. 
 
 The app automatically fetches the official Google BigQuery Release Notes RSS/Atom feed, parses and groups individual updates by their category, displays them in a clean professional light-themed dashboard, and allows developers to customize and tweet about specific updates.
 
